@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas>
-        
+        <Label Content="Yakira Wint -Guided Assignment 2" Canvas.Left="503" Canvas.Top="10" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Width="287" FontFamily="Lucida Sans Unicode"/>
+        <Label Content="Display Your Full Name - Message Box" Canvas.Left="10" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Center" Width="312" FontSize="18"/>
+        <Label Content="First Name" Canvas.Left="29" Canvas.Top="79" FontSize="18"/>
+        <Label Content="Last Name" Canvas.Left="29" Canvas.Top="118" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFirstName"  Canvas.Left="148" TextWrapping="Wrap" Canvas.Top="87"  Width="120" TextChanged="TxtFirstName_TextChanged"/>
+        <TextBox x:Name="txtLastName" Canvas.Left="148" TextWrapping="Wrap" Canvas.Top="126" Width="120"/>
+        <Button x:Name="btnFullName" Content="Display Full Name" Canvas.Left="301" Canvas.Top="103" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Width="284" Click="btnFullName_Click"/>
     </Canvas>
 </Window>
