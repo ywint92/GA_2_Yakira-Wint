@@ -6,13 +6,28 @@
         xmlns:local="clr-namespace:GA_2_Yakira_Wint"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Canvas>
+    <Canvas RenderTransformOrigin="0.657,0.525">
         <Label Content="Yakira Wint -Guided Assignment 2" Canvas.Left="503" Canvas.Top="10" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Width="287" FontFamily="Lucida Sans Unicode"/>
         <Label Content="Display Your Full Name - Message Box" Canvas.Left="10" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Center" Width="312" FontSize="18"/>
-        <Label Content="First Name" Canvas.Left="29" Canvas.Top="79" FontSize="18"/>
-        <Label Content="Last Name" Canvas.Left="29" Canvas.Top="118" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtFirstName"  Canvas.Left="148" TextWrapping="Wrap" Canvas.Top="87"  Width="120" TextChanged="TxtFirstName_TextChanged"/>
-        <TextBox x:Name="txtLastName" Canvas.Left="148" TextWrapping="Wrap" Canvas.Top="126" Width="120"/>
-        <Button x:Name="btnFullName" Content="Display Full Name" Canvas.Left="301" Canvas.Top="103" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Width="284" Click="btnFullName_Click"/>
+        <Label Content="First Name" Canvas.Left="29" Canvas.Top="79"/>
+        <Label Content="Last Name" Canvas.Left="29" Canvas.Top="118" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFirstName"  Canvas.Left="101" TextWrapping="Wrap" Canvas.Top="87"  Width="97" HorizontalAlignment="Left" VerticalAlignment="Center" TextChanged="txtFirstName_TextChanged"/>
+        <TextBox x:Name="txtLastName" Canvas.Left="101" TextWrapping="Wrap" Canvas.Top="122" Width="97" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnFullName" Content="Display Full Name" Canvas.Left="208" Canvas.Top="107" HorizontalAlignment="Left" VerticalAlignment="Center" Width="123" Click="btnFullName_Click"/>
+        <Label Content="Perform a Calculation - Label" Canvas.Left="29" Canvas.Top="157" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Number 1" Canvas.Left="29" Canvas.Top="191" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="lblEquation" Content="Sign" Canvas.Left="208" Canvas.Top="212" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Number 2" Canvas.Left="29" Canvas.Top="230"/>
+        <TextBox x:Name="txtNumber1" Canvas.Left="92" TextWrapping="Wrap" Canvas.Top="199" Width="106" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16"/>
+        <TextBox x:Name="txtNumber2" Canvas.Left="92" TextWrapping="Wrap" Canvas.Top="233" Width="106" FontSize="16" TextChanged="txtNumber2_TextChanged" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnAdd" Content="Add" Canvas.Left="29" Canvas.Top="277" Height="25" Width="92" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnAdd_Click"/>
+        <Button x:Name="btnSubtract" Content="Subtract" Canvas.Left="137" Canvas.Top="280" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="104" Click="btnSubtract_Click"/>
+        <Label Content="Display a Letter from a Word - Text Box" Canvas.Left="309" Canvas.Top="157" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Enter a word" Canvas.Left="309" Canvas.Top="194" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="lblNumberOfLetters1" Content="Enter a number" Canvas.Left="309" Canvas.Top="227" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtWord" TextChanged="txtWord_TextChanged" Canvas.Left="406" TextWrapping="Wrap" Canvas.Top="199" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDispayLetter" Canvas.Left="406" TextWrapping="Wrap" Canvas.Top="231" Width="80" HorizontalAlignment="Left" VerticalAlignment="Center" TextChanged="txtDispayLetter_TextChanged"/>
+        <TextBox x:Name="txtCharIndex" Canvas.Left="406" TextWrapping="Wrap" Canvas.Top="254" Width="84" HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="txtDisplayLetter_TextChanged" Height="18"/>
+        <Button x:Name="btnDisplayLetter" Content="Display Letter" Click="btnDisplayLetter_Click" Canvas.Left="309" Canvas.Top="278" HorizontalAlignment="Left" VerticalAlignment="Top" Width="177"/>
     </Canvas>
 </Window>
